@@ -21,5 +21,4 @@ def score_input(test_name, test_score=0, invalid_message="Invalid test score, tr
                 raise ValueError
 
         except ValueError:
-            return invalid_message
-
+            test_score = (input(invalid_message))
