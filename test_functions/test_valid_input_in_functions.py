@@ -22,5 +22,8 @@ class FunctionTests(unittest.TestCase):
     def test_score_input_invalid_message(self):
         self.assertEqual("Wrong input, please try again!", score_input("Syed", 500, "Wrong input, please try again!"))
 
+
 if __name__ == "__main__":
     unittest.main()
+
+
