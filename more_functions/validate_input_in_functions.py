@@ -11,14 +11,14 @@ def score_input(test_name, test_score=0, invalid_message="Invalid test score, tr
     """
 
     while True:
+
         test_score_str = str(test_score)
 
         try:
             if test_score_str.isnumeric() and 0 <= int(test_score) <= 100:
                 return test_name + ": " + str(test_score)
 
-            else:
-                raise ValueError
+            raise ValueError
 
         except ValueError:
-            test_score = (input(invalid_message))
+            return invalid_message
